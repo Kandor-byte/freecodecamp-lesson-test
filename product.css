@@ -1,0 +1,286 @@
+body {
+    background-color: #EBEBEB;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+h2 {
+    margin-bottom: -15px;
+    font-weight: 900;
+}
+
+#titl {
+    display: flex;
+    justify-content: center;
+    font-variant: small-caps;
+    margin-top: 250px;
+}
+
+
+
+#logonavdiv {
+    position: fixed;
+    background-color: #EBEBEB;
+    width: 98%;
+    height: 80px;
+    top: 0;
+    display: grid;
+    grid-template-areas: 
+        "logodiv"
+        "navdiv";
+    margin-bottom: 50px;;
+}
+
+
+
+#logodiv {
+    grid-area: logodiv;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+#logo {
+    margin-left: 10px;
+    align-self: center;
+    grid-area: logo;
+}
+
+#logotitl {
+    margin-left: 10px;
+    align-self: center;
+    margin-top: -18px;
+    font-weight: 900;
+    grid-area: logotitl;
+}
+
+#navdiv {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    grid-area: navdiv;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #EBEBEB;
+}
+
+#features {
+    margin: 20px 0px;
+    grid-area: features;
+}
+
+#works {
+    margin: 20px 0px;
+    grid-area: works;
+}
+
+#pricing {
+    margin: 20px 0px;
+    grid-area: pricing;
+}
+
+.nav-link {
+    padding: 10px 20px;
+    font-variant: small-caps;
+    text-decoration: none;
+    color: black;
+    background-color: orange;
+    font-weight: 900;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    color: lightgray;
+    background-color: darkred;
+}
+
+
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#optionsdiv {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;   
+}
+
+.textdiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.png {
+    align-self: center;
+    max-width: 60px;
+    height: 60px;
+    margin-right: 3em;
+}
+
+#videodiv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#video {
+    width: 640px;
+    height: 480px;
+    border-style: none;
+}
+
+#formdiv {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#form {
+    text-align: center;
+}
+
+#email {
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+#submit {
+    width: 20%px;
+    height: 50px;
+    font-size: x-large;
+    font-weight: 900;
+    background-color: darkred;
+    color: lightgray;
+    border-style: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#submit:hover {
+    background-color: red;
+}
+
+#pricediv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price {
+    width: 300px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pricetitl {
+    background-color: lightgray;
+    margin: 0;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.dollar {
+    font-size: x-large;
+}
+
+.pricelist {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.pricelist li {
+    margin: 10px 0;
+}
+
+.button {
+    border-style: none;
+    border-radius: 5px;
+    background-color: orange;
+    padding: 10px 20px;
+    font-size: large;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: darkred;
+    color: white;
+}
+
+#footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+#footerdiv {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#footerlinksdiv {
+    margin-bottom: 10px;
+}
+
+.footerlinks {
+    text-decoration: none;
+    color: dimgray;
+    margin: 5px 10px;
+    transition: 0.5s;
+}
+
+.footerlinks:hover {
+    color: black;
+}
+
+#footercopyright {
+    text-align: center;
+}
+
+@media (min-width: 800px){
+    #navdiv {
+       flex-direction: row;
+    }
+    #logodiv {
+        justify-content: start;
+    }
+    #logonavdiv {
+        grid-template-areas: 
+            "logodiv navdiv";
+    }
+    #titl {
+        margin-top: 100px;
+        }
+    #pricediv {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
